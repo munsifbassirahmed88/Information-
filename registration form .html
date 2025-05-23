@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+    /* Base Styling */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+    }
+
+    /* Navigation Bar */
+    .tabs nav {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .tabs nav a {
+      margin: 0 15px;
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .tabs nav a:hover {
+      color: #00ffcc;
+    }
+
+    /* Logo */
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 150px;
+      height: auto;
+    }
+
+    /* Registration Form Container */
+    .registration {
+      max-width: 500px;
+      margin: 30px auto 60px;
+      padding: 25px 30px;
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffcc88;
+    }
+
+    /* Form Header */
+    .registration h1 {
+      text-align: center;
+      color: #00ffcc;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* Form Groups */
+    .registration div {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #a0f0e0;
+    }
+
+    /* Inputs and Select */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 6px;
+      border: none;
+      background-color: #333333;
+      color: #eee;
+      font-size: 16px;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    select:focus {
+      outline: none;
+      background-color: #444;
+      box-shadow: 0 0 8px #00ffcc;
+    }
+
+    /* Submit Button */
+    input[type="submit"] {
+      width: 100%;
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      padding: 14px 0;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00bfa5;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e1e1e;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 15px;
+      letter-spacing: 0.7px;
+    }
+
+    footer h1 {
+      color: #00ffcc;
+      margin-bottom: 12px;
+    }
+
+    footer pre {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      white-space: pre-wrap;
+      margin: 0;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .registration {
+        margin: 20px 15px 40px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+        <!-- Logo -->
+  <img src="https://cdn5.vectorstock.com/i/1000x1000/93/64/gaming-console-badge-logo-vector-24019364.jpg" alt="Games" width="150" height="auto">
+    <header>
+        <div class="tabs">
+            <nav>
+                <a href="home.html">HOME</a>
+                <a href="about us.html">ABOUT US</a>
+                <a href="#registration">REGISTRATION FORM</a>
+                <a href="#Contact">CONTACT</a>
+            </nav>
+        </div>
+        <form>
+        <!-- registration section -->
+         <section id="registration">
+            <div class="registration">
+                <h1><b><u>REGISTRATION FORM</u></b></h1>
+            <div>
+            <label for="name">Name</label>
+            <br>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div>
+            <label for="Age">Age</label>
+            <br>
+            <input id="Age"  type="text" placeholder="Enter the Age" required>
+            </div>
+            <div>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" type="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+            <label for="password">password</label>
+            <br>
+            <input type="password" placeholder="Enter type of password" required>
+            </div>
+            <div>
+            <label for="Country">Country</label>
+            <br>
+            <input id="Country"  type="text" placeholder="Enter Country Name" required>
+            </div>
+            <div>
+            <label for="gender">Gender</label>
+            <br>
+            <select name="Gender" id="gender" required>
+            <option value="Pakistan" disabled selected>Gender below</option>
+            <option value="male">Male</option>
+            <option value="female">female</option>
+            <option value="male">prefer not to stay</option>
+            </select>
+            </div>
+            <br>
+            <input type="submit" value="submit">
+            </div>
+         </section>
+         </form>
+         <!-- contact section -->
+          <footer id="Contact">
+        <h1><b><u>CONTACT</u></b></h1>
+        <pre>
+Phone        :   +92 000 0000000
+Email        :   abc@gmail.com
+Instagram    :   games_consoles
+        </pre>
+    </footer>
+</body>
+</html>
